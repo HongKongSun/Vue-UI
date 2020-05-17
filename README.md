@@ -10,7 +10,7 @@
 
 ### 安装包
 ```bash
-npm install wwz-ui
+npm install hk-ui
 ```
 
 ### 引入 CSS 
