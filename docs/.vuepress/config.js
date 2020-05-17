@@ -12,6 +12,7 @@ module.exports = {
         search: false,
         nav: [
             {text: 'Github', link: 'https://github.com/HongKongSun/Vue-UI'},
+            // {text: 'Gitee', link: 'https://gitee.com/hongkongsun/Vue-UI'},
         ],
         sidebar: [
             {
