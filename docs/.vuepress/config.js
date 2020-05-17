@@ -1,0 +1,95 @@
+const path = require('path')
+
+module.exports = {
+    title: 'ZUI',
+    logo: '/logo.jpg',
+    description: 'Just playing around',
+    base: '/Vue-UI/',
+    head: [
+        ['link', { rel: 'shortcut icon', type: "image/png", href: `/favicon.png` }]
+    ],
+    themeConfig: {
+        search: false,
+        nav: [
+            {text: 'Github', link: 'https://github.com/HongKongSun/Vue-UI'},
+        ],
+        sidebar: [
+            {
+                title: '前言',
+                children: [
+                    '/'
+                ]
+            },
+            {
+                title: '入门',
+                collapsable: true,
+                children: [
+                    '/install/',
+                    '/get-started/'
+                ]
+            },
+            {
+                title: '通用',
+                collapsable: false,
+                children: [
+                    '/components/icon/',
+                    '/components/button/',
+                ]
+            },
+            {
+                title: '布局',
+                collapsable: false,
+                children: [
+                    '/components/grid/',
+                    '/components/layout/'
+                ]
+            }, {
+                title: '导航',
+                collapsable: false,
+                children: [
+                    '/components/button/button-group.md',
+                    '/components/menu/',
+                    '/components/tab/',
+                    '/components/pager/'
+                ]
+            }, {
+                title: '数据录入',
+                collapsable: false,
+                children: [
+                    '/components/input/',
+                    '/components/button/button-select.md',
+                    '/components/cascader/'
+                ]
+            },
+            {
+                title: '数据展示',
+                collapsable: false,
+                children: [
+                    '/components/carousel/',
+                    '/components/collapse/',
+                    '/components/table/',
+                    'components/popover/'
+                ]
+            },
+            {
+                title: '反馈',
+                collapsable: false,
+                children: [
+                    '/components/toast/'
+                ]
+            },
+            {
+                title: '其他',
+                collapsable: false,
+                children: [
+                    '/components/sticky/',
+                    '/components/click-outside/'
+                ]
+            }
+
+        ]
+    },
+    scss:{
+        includePaths: [path.join(__dirname, '../../styles')]
+    }
+}

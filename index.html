@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+
+        }
+        #app {
+            margin: 100px;
+        }
+        .head, .content {
+            display: block;
+        }
+        .red-font {
+            color: red;
+        }
+        body {
+            border: 1px solid red
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <z-collapse :selected.sync="selectedItems">
+        <z-collapse-item title="标题1" name="1">
+           内容1
+        </z-collapse-item>
+        <z-collapse-item title="标题2" name="2">
+           内容2
+        </z-collapse-item>
+        <z-collapse-item title="标题3" name="3">
+           内容3
+        </z-collapse-item>
+    </z-collapse>
+    <z-popover trigger="hover">
+        <template slot="content">
+            欢迎注册使用我的组件
+        </template>
+        <slot>
+            <z-button>提示</z-button>
+        </slot>
+    </z-popover>
+    <z-popover trigger="focus">
+        <template slot="content">
+            欢迎注册使用我的组件
+        </template>
+        <slot>
+            <z-button>提示</z-button>
+        </slot>
+    </z-popover>
+    <z-popover position="bottom">
+        <template slot="content">
+            欢迎注册使用我的组件
+        </template>
+        <slot>
+            <z-button>提示</z-button>
+        </slot>
+    </z-popover>
+    <z-popover position="left">
+        <template slot="content">
+            欢迎注册使用我的组件
+        </template>
+        <slot>
+            <z-button>提示</z-button>
+        </slot>
+    </z-popover>
+    <z-popover position="right">
+        <template slot="content">
+            欢迎注册使用我的组件
+        </template>
+        <slot>
+            <z-button>提示</z-button>
+        </slot>
+    </z-popover>
+    <z-button>hi</z-button>
+    <z-tabs selected="finance">
+        <z-tabs-head class="head">
+            <z-tabs-item name="finance">金融</z-tabs-item>
+            <z-tabs-item class="sports" name="sports" active-class="red-font">体育界</z-tabs-item>
+        </z-tabs-head>
+        <z-tabs-body class="content">
+            <z-tabs-pane name="finance">内容1</z-tabs-pane>
+            <z-tabs-pane name="sports">内容2</z-tabs-pane>
+        </z-tabs-body>
+    </z-tabs>
+    <button @click="showToast">点我</button>
+    <z-layout class="layout">
+        <z-sider class="sider"></z-sider>
+        <z-layout>
+        <z-header class="header"></z-header>
+            <z-content class="content"></z-content>
+        <z-footer class="footer"></z-footer>
+        </z-layout>
+    </z-layout>
+    <div class="row">
+        <z-row gutter="20">
+            <z-col  span="6">
+                <div class="content"></div>
+            </z-col>
+            <z-col  span="6">
+                <div class="content"></div>
+            </z-col>
+        </z-row>
+    </div>
+    <div>
+        <z-button>普通按钮</z-button>
+        <z-button icon="like" icon-position="left">点赞</z-button>
+        <z-button icon="setting" icon-position="right">设置</z-button>
+        <z-button loading icon="setting" icon-position="right">加载中</z-button>
+        <z-button loading>加载中</z-button>
+        <z-button disabled>不可用</z-button>
+        <z-button disabled>不可用</z-button>
+        <z-button :is-circle="true" icon="setting">不显示</z-button>
+        <z-button-group>
+            <z-button icon="left" icon-position="left">上一页</z-button>
+            <z-button icon-position="left">按钮组</z-button>
+            <z-button icon-position="left">按钮组</z-button>
+            <z-button icon="right" icon-position="right">下一页</z-button>
+        </z-button-group>
+        <z-button-select :list="selectList"></z-button-select>
+    </div>
+    <div style="margin-top: 20px;">
+        <z-input placeholder="正常" v-model="message"></z-input>
+        {{message}}
+        <z-input placeholder="禁用" disabled></z-input>
+        <z-input placeholder="只读" read-only></z-input>
+        <z-input placeholder="错误信息在默认位置" error-position="left" error="错误信息"></z-input>
+        <z-input placeholder="错误信息在下方" error-position="bottom" error="错误信息"></z-input>
+
+    </div>
+</div>
+<script src="./src/app.js"></script>
+</body>
+</html>
