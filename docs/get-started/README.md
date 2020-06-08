@@ -1,13 +1,7 @@
 # 快速上手
 
-## 在线演示 
 
-这是最简单的方法，可以让你快速看到结果
-
-<iframe src="https://codesandbox.io/embed/8xo4m5ywq2?fontsize=14" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-
-
-## 在本地使用  
+## 本地使用  
 
 ### 1. 初始化一个 Vue 项目
 

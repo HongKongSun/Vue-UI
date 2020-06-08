@@ -30,7 +30,5 @@ directives: {ClickOutside},
 
 如果你使用这个指令，我会在元素移除后自动清除监听器，并且不管该页面上有多少个元素，我只会进行一次监听。所以，推荐使用！
 
-[click-outside 源码阅读](https://github.com/mysteryven/wen-design/blob/master/src/click-outside.js)
-
 
 

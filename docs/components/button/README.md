@@ -4,7 +4,7 @@
 
 ```
 import {Button} from 'wwz-ui' 
-``` 
+```
 
 ## 预览
 
@@ -13,9 +13,35 @@ import {Button} from 'wwz-ui'
 </ClientOnly>
 
 
-## 在线示例
+## 代码
 
-[![Edit z-button-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/0oo90x6ojn?fontsize=14)
+<details style="margin-top: 32px;">
+ <summary style=" outline: none">点击查看代码</summary> 
+
+```vue
+        <div>
+            <z-button>普通按钮</z-button>
+        </div>
+        <div>
+            <z-button icon="like">
+               点赞
+            </z-button>
+        </div>
+        <div>
+            <z-button icon-position="right" icon="download">
+                下载
+            </z-button>
+        </div>
+        <div>
+            <z-button disabled>禁用</z-button>
+        </div>
+        <div>
+            <z-button loading>加载中</z-button>
+        </div>
+        <div>
+            <z-button isCircle icon="setting"></z-button>
+        </div>
+```
 
 ## API
 
