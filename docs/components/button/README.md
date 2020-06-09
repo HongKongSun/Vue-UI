@@ -18,27 +18,18 @@ import {Button} from 'wwz-ui'
 <details style="margin-top: 32px;">
  <summary style=" outline: none">点击查看代码</summary> 
 
-```vue
+```html
         <div>
             <z-button>普通按钮</z-button>
-        </div>
-        <div>
-            <z-button icon="like">
-               点赞
-            </z-button>
-        </div>
-        <div>
-            <z-button icon-position="right" icon="download">
-                下载
-            </z-button>
-        </div>
-        <div>
+        
+            <z-button icon="like">点赞</z-button>
+       
+            <z-button icon-position="right" icon="download">下载</z-button>
+       
             <z-button disabled>禁用</z-button>
-        </div>
-        <div>
+        
             <z-button loading>加载中</z-button>
-        </div>
-        <div>
+       
             <z-button isCircle icon="setting"></z-button>
         </div>
 ```
